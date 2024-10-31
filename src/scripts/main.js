@@ -28,6 +28,5 @@ function formatNumber(value) {
   return result;
 }
 
-total.insertAdjacentText('beforebegin', formatNumber(sum));
-
-avgPop.insertAdjacentText('beforebegin', formatNumber(avg.toFixed(0)));
+total.innerText = formatNumber(sum);
+avgPop.innerText = formatNumber(avg.toFixed(0));
